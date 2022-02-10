@@ -1,0 +1,125 @@
+ <!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CodePen - Demo FlexBox 3</title>
+    <style>
+        body {
+            padding: 2em;
+        }
+
+        .headerContainer {
+            display: flex;
+            flex-flow: column wrap;
+            align-content: center;
+            background-color: tomato;
+            font-weight: bold;
+            padding: 10px;
+        }
+
+        .footerContainer {
+            display: flex;
+            flex-flow: column wrap;
+            align-content: center;
+            background: lightgreen;
+            font-weight: bold;
+            padding: 10px;
+        }
+
+        .mainContainer {
+            display: flex;
+            flex-flow: row wrap;
+            font-weight: bold;
+            text-align: center;
+        }
+
+        .mainContentItem {
+            text-align: left;
+            background: deepskyblue;
+            flex: 3 0px;
+            order: 2;
+        }
+
+        article {
+            padding: 10px;
+            margin: 10px;
+            background: aqua;
+
+        }
+
+        .sideBarLeftItem {
+            background: gold;
+            order: 1;
+        }
+
+        .sideBarRightItem {
+            background: hotpink;
+            order: 3;
+        }
+
+        .sideBarItem {
+            flex: 1 0 0;
+            border: 0px solid green;
+        }
+    </style>
+</head>
+
+<body>
+    <header class="headerContainer">
+        <h1>HEADER - Sample Flexbox Example</h1>
+    </header>
+    <div class="mainContainer">
+        <section class="mainContentItem">
+            <article>
+                <h2>First Article</h2>
+                <p>Water is the single most important resource on the planet that we live on, and that is why
+                    it is essential that we conserve it. Water is the basic necessity for all living beings, and
+                    it is incredibly important to conserve it. It is not only important for living and breathing things,
+                    but also
+                    for many inanimate objects that humans create. For example, to build a house, we need concrete, and
+                    to make concrete,
+                    we need to mix cement powder with water. Water constitutes more than 70 percent of the Earth’s
+                    surface, and yet we do
+                    not have enough water for our needs.
+                    It is essential to conserve and save water for ourselves and the entire planet Earth.</p>
+            </article>
+            <article>
+                <h2>Second Article</h2>
+                <p>Here, we will be providing you with two different kinds of articles on save water. The first will be
+                    a 500-word article suitable for middle school, high school, and competitive exam aspirants. The
+                    second article will be one of about 150-200 words, which is appropriate for younger students. These
+                    articles are not only helpful for the students, but also for teachers looking for some more
+                    extra-curricular material to use in their classrooms.</p>
+            </article>
+            <article>
+                <h2>Third Article</h2>
+                <p>There are several ways to save water, and they are very easy to inculcate in our daily lives. We must
+                    not leave the tap water running when we are putting soap while washing our hands. We can use buckets
+                    to take a bath rather than use the shower, no flushing of the toilet unnecessarily, always finishing
+                    the water in our glasses instead of throwing it away, etc. There are many more ways to save water,
+                    too, but these are just some of them for us to understand the little things that can be done.
+
+                    It is a common saying that there is power in numbers, which means that if all of us get together and
+                    do our small parts in saving water, we will surely be able to do so collectively. While individual
+                    acts of saving water can do little, if all of us waste less water, or more judiciously consume
+                    water, it will all add up to a greater effort.</p>
+            </article>
+        </section>
+
+        <sideBar class="sideBarItem sideBarLeftItem">
+            <div class="center">
+                <p>Left Side Bar</p>
+            </div>
+        </sideBar>
+
+        <sideBar class="sideBarItem sideBarRightItem">
+            <div class="center">
+                <p>Right Side Bar</p>
+            </div>
+        </sideBar>
+    </div>
+    <footer class="footerContainer">Footer</footer>
+</body>
